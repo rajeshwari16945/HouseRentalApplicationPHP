@@ -1,0 +1,1281 @@
+/* navigation bar */
+.nav {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: black; 
+  color: white; 
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  z-index: 1000;
+}
+
+.favoriteContainer {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+}
+
+.favoriteIcon {
+  margin-right: 5px; /* Adjust the spacing between the icon and the echoed value */
+}
+
+/* Navbar for Common */ 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: #007bff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.navDropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navDropdown option {
+  background-color: #333;
+  color: #007bff;
+}
+
+.navDropdown::-ms-expand {
+  display: none;
+}
+
+.navDropdown::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.left-section, .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; 
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-weight: bolder;
+  font-size: 45px;
+}
+
+.nav-items{
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.nav-items:hover {
+  background-color: #66a1e5; 
+}
+
+.right-section a {
+  margin-left: 10px; /* Add spacing between symbols */
+}
+
+.openbtn {
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 10px;
+  background-color: black;
+}
+
+.openbtn:hover {
+  background-color: #555;
+}
+
+.closebtn{
+  font-size: 25px;
+  cursor: pointer;
+  border: 2px solid #d1cdcd;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  /* border: 2px solid #d1cdcd; */
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #056ad6f5;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #ebebf4;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+.sidebarmain {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+
+/* navigation bar */
+.navDropdown{
+    color: white;
+    background: border-box;
+    text-align: center;
+    border: none;
+    outline: none;
+    
+}
+
+.favoriteIcon{
+    width: 20px;
+}
+
+
+/* agentd & owner */
+.agentBody{
+  background-color: #f9f9fb;
+}
+.agentIntro{
+    background: url(../images/agentIntro.png);
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+
+}
+
+.agentLocal{
+    position: absolute;
+    right: 0px;
+    width: 48%;
+    top: 15%;
+
+}
+
+.localh1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+
+.localp{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    width: 90%;
+    line-height: 1.5rem;
+}
+
+.localAgentConnect{
+    padding: 1.8%;
+    background-color: rgb(38, 118, 215);
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.findAgent{
+    display: grid;
+    place-items: center;
+}
+
+
+.findAgentInner{
+    width: 80%;
+}
+
+.findAgenth1{
+    font-size: 2.5rem;
+}
+
+.agentsearchdiv{
+    padding: 1%;
+    /* height: 80px; */
+    background-color: #f1f1f4;
+
+}
+
+.locationLabel, .nameLabel, .agentSpecificLabel{
+    display: block;
+    font-size: 1.2rem;
+}
+
+.locationdiv, .namediv{
+    width: 20%;
+    align-self: center;
+  }
+  
+  .optiondiv{
+    display: flex;
+    width: 25%;
+    align-self: center;
+}
+.agentsearchdiv form{
+    display: flex;
+}
+
+.searchInput, .nameInput{
+    border: none;
+    border-radius: 5px;
+    padding: 6%;
+    font-size: 1rem;
+}
+
+.searchButton{
+    padding: 5%;
+    background-color: rgb(38, 118, 215);
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.searchButtondiv{
+    width: 10%;
+    align-self: center;
+}
+
+.searchAgentImg{
+    width: 30%;
+    border-radius: 40%;
+}
+
+.agentRating{
+  display: flex;
+  width: 90px;
+  height: 30px;
+  color: gold;
+}
+
+.agentRatingsCell{
+  text-align: -webkit-center;
+}
+
+.agentsearchDis{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.searchAgentMsg{
+    align-self: center;
+}
+
+.agentTable{
+  width: 100%;
+  background-color: white;
+  border: none;
+  margin: 10px;
+  text-align: center;
+}
+
+.agentTableHead td{
+  text-align: center;
+}
+
+.agentTableHead td p{
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+}
+
+.agentTableImage{
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.agentDetailsCell{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.agentPosting{
+  text-align: center;
+}
+
+/* agentd & owner */
+
+/* advertise  */
+.advertiseOpt{
+  position: relative;
+  left: 10%;
+  text-align: center;
+  width: 80%;
+  padding-bottom: 10%;
+}
+
+.advh1{
+  margin-top: 80px;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.advertiseOpt, p{
+  font-size: 1rem;
+}
+
+.advertiseOpt, h4{
+  font-size: 1.5rem;
+}
+
+.agentAdv, .ownerAdv{
+  border: none;
+  border-radius: 10px;
+  /* border:1px solid #b9baba; */
+  width: 400px;
+  box-shadow:0px 0px 20px 5px rgba(0,0,0,0.45) ;
+}
+
+.advAgentSelling, .advOwnerSelling{
+  border-radius: 10px 10px 0px 0px;
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  background: no-repeat;
+}
+
+.domainCards{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.agentAdvInfo, .ownerAdvInfo{
+  margin-bottom: 5%;
+}
+
+.getButton{
+  color: #fff;
+  background-color: #006aff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5%;
+  width: 40%;
+}
+
+.agentDetailCardOuter{
+display: flex;
+position: relative;
+justify-content: center;
+top: -450px;
+}
+
+.agentDetailCard{
+  display: none;
+background-color: #f1f1f4;
+border: none;
+  border-radius: 10px;
+  /* border:1px solid #b9baba; */
+  width: 800px;
+  box-shadow:0px 0px 20px 5px rgba(0,0,0,0.45) ;
+  padding: 2%;
+}
+
+.advertiseForm{
+  display: grid;
+}
+
+.advertiseForm label{
+  width: 200px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.advertiseForm input{
+  border: none;
+  border-radius: 5px;
+  padding: 3%;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.advertiseSubmit{
+  font-weight: 700;
+    font-size: 20px;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: #007bfff5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* advertise  */
+
+/* budgetPlanner */
+.budgetCalculator{
+  margin: 7%;
+  width: 80%;
+}
+
+.rentalBudgetCalcualtor{
+  padding: 3%;
+  border-radius: 5px;
+  background-color: #f1f1f4;
+}
+
+.rentBudgetPlanner label{
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.rentBudgetPlanner input{
+  border: none;
+  border-radius: 5px;
+  padding: 3%;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.gridRental, .gridHouseBuy{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.rentResultDisplay{
+  height: 400px;
+  background-color: #f1f1f4;
+}
+
+.calculatorForm{
+  margin-top: 5%;
+  padding: 3%;
+  border-radius: 5px;
+  background-color: #f1f1f4;
+}
+
+.houseBudgetPlanner label{
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.houseBudgetPlanner input{
+  border: none;
+  border-radius: 5px;
+  padding: 3%;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.houseCalculateButtton, .rentCalculateButtton{
+  display: block;
+  margin: 2%;
+  background-color: #006aff;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+/* budgetPlanner */
+
+/** homePageStyles **/
+
+.homePage {
+  background-color: white;
+  color: black;
+}
+  
+.homePage main, .favoriteClass main, .houseSearch main {
+  margin-top: 0px; 
+  overflow-x: hidden;
+}
+    
+.homePage footer, .favoriteClass footer, .houseSearch footer, .house-details footer, .about-us-container footer, .footer{
+  background-color: black; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px; 
+  line-height: 0.2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+  
+.search-section {
+  width: 100%; /* Takes full width of the viewport */
+  background-color: #f0f0f0; 
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.0;
+  color: white;
+}
+  
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+  
+.search-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px; 
+  justify-content: center;
+  align-items: center;
+  font-weight: 500; 
+  font-size: 20px;
+}
+  
+.search-button {
+  font-weight: 700; 
+  font-size: 20px;
+  height: 60px;
+  padding: 10px 20px;
+  background-color: #007bfff5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+  
+.search-button:hover {
+  background-color: #4525f7;
+}
+
+.trending-houses-heading {
+  font-weight: 500;
+  font-size: 20px; 
+  padding-left: 250px;
+}
+  
+.cards-section {
+  /* Display cards side by side */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  color: white;
+  padding-left: 230px;
+  height: auto;
+}
+
+.no-house-found {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+  margin: 0 0 0.05rem 0;
+  font-size: large;
+}
+  
+/* House Search Styles */
+    
+.filter-section {
+  width: 100%; 
+  height: 200px;
+  display: flex;
+  align-items: center;
+  line-height: 0.0;
+  color: black;
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 60px;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: fixed;
+  top: 10px;
+  background-color: #fff;
+  z-index: 500;
+}
+
+.filter-controls-table {
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-controls-table td {
+  padding: 0 5px;
+}
+  
+.filter-button, .clear-all-button, .go-back-button {
+  font-weight: 600; 
+  font-size: 18px;
+  height: 50px;
+  padding: 10px 20px;
+  background-color: #007bfff5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+  
+.filter-button:hover, .clear-all-button:hover, .go-back-button {
+  background-color: #4525f7;
+}
+
+.search-text-box, .sortDropdown, .bedDropdown, .priceDropdown, .propertyTypeDropdown, .bathDropdown {
+  height: 50px;
+  font-size: large;
+  color: rgb(134, 134, 134);
+  border-radius: 5px;
+  margin-right: 10px; /* Add margin-right for spacing */
+}
+
+.bedDropdown, .priceDropdown, .propertyTypeDropdown, .bathDropdown {
+  width: 150px;
+}
+  
+.count-result {
+  background-color: #edeaea;
+  width: 100%;  
+  height: 40px;
+  margin-top: 20px;
+  padding-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+ /** house cards**/
+
+.cards-section .card {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-direction: column;
+  width: 320px;
+  margin: 20px;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+}
+
+.cards-section .card-info {
+  width: 100%;
+  padding: 20px;
+  height: 50%;
+  margin: 0 0 0.05rem 0;
+}
+
+.cards-section .carousel-container {
+  width: 100%;
+  position: relative;
+  height: 50%;
+}
+
+.cards-section .carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.cards-section .carousel .card-carousel-image {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.card-info .favorite-button {
+  float: right;
+  background-size: cover;
+  cursor: pointer;
+  color: grey;
+  margin-right: 30px;
+  width: 30px;
+}
+
+.card-info .favorite-button.active{
+  color: blue;
+}
+
+.card-readmore-link {
+  /* Link styles */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cards-section .prev, .cards-section .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+}
+
+.cards-section .prev {
+  left: 0;
+}
+
+.cards-section .next {
+  right: 0;
+}
+
+.hide-tags .house-id-hidden {
+  display: none;
+}
+
+ /** house cards **/
+  
+
+/** favorite page **/
+
+.favoriteClass {
+  font-family: Arial, sans-serif;
+}
+
+.favorite-heading {
+  padding-top: 70px;
+  padding-left: 250px;
+}
+
+.home-button-in-favorite {
+  font-weight: 600; 
+  font-size: 18px;
+  height: 30px;
+  padding: 10px 20px;
+  background-color: #007bfff5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width :auto;
+}
+
+.no-favorites {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+  margin: 0 0 0.05rem 0;
+  font-size: x-large;
+  padding-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+  /** **/
+  .card2 {
+    background-color: white;
+    width: 68%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    z-index: -50000000;
+    margin: 20px;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.container-fluid {
+    padding: 0%;
+    margin: 0%;
+}
+
+.row {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* input[type='datetime-local'],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+} */
+
+.col-md-3 {
+    flex-basis: calc(25% - 20px);
+    margin-right: 10px;
+}
+
+.col-md-1 {
+    flex-basis: calc(10% - 10px);
+    margin-right: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 10px;
+    }
+    .col-md-3,
+    .col-md-1 {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+
+/* leasing info */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+ul li::before {
+  content: "\2022";  
+  color: #333;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden; 
+}
+
+.navDropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navDropdown option {
+  background-color: #333;
+  color: #007bff;
+}
+
+.navDropdown::-ms-expand {
+  display: none;
+}
+
+.navDropdown::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+/** house details styles **/
+
+.images-section .carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.images-section .carousel-inner {
+  display: flex;
+}
+
+.images-section .carousel-inner img {
+  width: calc(100% / 2); /* Adjust the width based on the number of visible slides */
+  height: 400px;
+  display: none; /* Hide all slides initially */
+  justify-content: center;
+}
+
+.images-section .prev, .images-section .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+}
+
+.images-section .prev {
+  left: 0;
+}
+
+.images-section .next {
+  right: 0;
+}
+
+.house-details {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.house-details, .house-overview, .house-features, .pet-policy, .house-agent {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.house-details h1, .house-overview h1, .pet-policy h1 {
+  margin: 0 0 10px;
+}
+
+.location, .pet-description {
+  font-style: italic;
+  color: #666;
+}
+
+.basic-details {
+  margin-top: 20px;
+}
+
+.detail {
+  margin-bottom: 10px;
+}
+
+.details-label {
+  font-weight: bold;
+}
+
+.details-value {
+  margin-left: 10px;
+}
+
+.house-features {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+}
+
+.house-features .textbox {
+  flex: 1; /* Distribute available space equally among flex items */
+  max-width: calc(50% - 10px); /* Calculate max-width to fit two textboxes side by side with a margin of 10px */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.house-details-popup {
+  display: none;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  /* border:1px solid #b9baba; */
+  width: 800px;
+  box-shadow:0px 0px 20px 5px rgba(0,0,0,0.45) ;
+}
+
+/** leasing page **/
+
+.leasing-info-container {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.leasing-info-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.leasing-info-container h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.leasing-section {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.leasing-section:last-child {
+  border-bottom: none;
+}
+
+.leasing-info-container ul {
+  
+  padding: 0;
+  margin-left: 20px;
+}
+
+.leasing-info-container li {
+margin-bottom: 5px;
+
+}
+
+.leasing-info-container p {
+  margin: 0;
+  line-height: 1.5;
+  color: #555;
+  font-size: 16px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.leasing-details-col-6 {
+  padding: 0;
+}
+
+.leasing-details-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.leasing-details-col {
+  flex: 1;
+  padding: 0 15px; 
+}
+
+.leasing-details-col-6 {
+  flex-basis: 50%; 
+}
+
+.leasing-gallery {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.leasing-images {
+  margin-top: 8%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+}
+
+.leasing-images img {
+  width: 500px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.scroll-left, .scroll-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  z-index: 1;
+}
+
+/** About us styles **/
+
+.about-us-container main {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  padding: 55px;
+}
+
+.project-overview, .team-introduction {
+  margin-bottom: 30px;
+}
+
+.about-us-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-overview {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.0;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.member-details h3 {
+  margin-top: 0;
+}
+
+.member-details p {
+  margin-bottom: 10px;
+}
+/** About us styles **/
